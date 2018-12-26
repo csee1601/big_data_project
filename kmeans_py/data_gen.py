@@ -20,10 +20,10 @@ def generate_data(num):
             item_sales = random.randint(100, 200)
             item_price = round(random.uniform(20, 25), 2)
         elif i % 10 == 2:
-            item_sales = random.randint(6000, 9000)
+            item_sales = random.randint(6000,9000)
             item_price = round(random.uniform(1, 3), 2)
         else:
-            item_sales = random.randint(1000,3000)
+            item_sales = random.randint(2000,3000)
             item_price = round(random.uniform(5,10) ,2)
         fo.writelines(str(item_prov) + ',' + str(item_year) + ',' + str(item_sales) + ',' + str(item_price) + "\n")
     fo.close()
