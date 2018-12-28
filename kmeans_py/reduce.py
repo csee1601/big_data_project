@@ -36,7 +36,6 @@ def K_means(cluster_num = 3, iteration_time = 10):
         return K_means(cluster_num, iteration_time)
 
     elif iter_time == iteration_time:
-        calculate_centroids(cluster_num)
         return
     else:
         calculate_centroids(cluster_num)
@@ -44,6 +43,7 @@ def K_means(cluster_num = 3, iteration_time = 10):
         tag_items(cluster_num)
         iter_time = iter_time + 1
         return K_means(cluster_num, iteration_time)
+
 
 def tag_items(cluster_num = 3):
     global data_list
@@ -76,7 +76,7 @@ def calculate_centroids(cluster_num = 3):
 
 def print_result():
     for item in data_list:
-        print(str(item[1]) + "," + str(item[2]) + "," + str(item[-1]))
+        print(str(item[0]) + "," + str(item[1]) + "," + str(item[2]) + "," + str(item[-1]))
     return
 
 if __name__ == '__main__':
