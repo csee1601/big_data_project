@@ -1,0 +1,28 @@
+<configuration>
+    <property>
+            <name>dfs.namenode.name.dir</name>
+            <value>/opt/hadoop/data/nameNode</value>
+    </property>
+
+    <property>
+            <name>dfs.datanode.data.dir</name>
+            <value>/opt/hadoop/data/dataNode</value>
+    </property>
+
+    <property>
+            <name>dfs.replication</name>
+            <value>2</value>
+    </property>
+    <property>
+            <name>dfs.datanode.handler.count</name>
+            <value>10</value>
+    </property>
+    <property>
+            <name>dfs.block.size</name>
+            <value>33554432</value>
+    </property>
+    <property>
+	    <name>dfs.namenode.handler.count</name>
+    	    <value>30</value>
+    </property>
+</configuration>

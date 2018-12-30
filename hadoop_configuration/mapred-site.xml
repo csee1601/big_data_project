@@ -1,0 +1,27 @@
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>8192</value>
+    </property>
+    <property>
+   	<name>io.sort.factor</name>
+        <value>5</value>
+    </property>
+    <property>
+	<name>mapred.reduce.parallel.copies</name>
+	<value>20</value>
+    </property>
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>8192</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>8192</value>
+    </property>
+</configuration>
+
